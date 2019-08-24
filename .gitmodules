@@ -25,3 +25,6 @@
 [submodule "bundle/intero"]
 	path = bundle/intero
 	url = https://github.com/parsonsmatt/intero-neovim
+[submodule "bundle/haskell-vim"]
+	path = bundle/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim
