@@ -28,3 +28,6 @@
 [submodule "bundle/haskell-vim"]
 	path = bundle/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim
+[submodule "bundle/vim-hindent"]
+	path = bundle/vim-hindent
+	url = https://github.com/alx741/vim-hindent

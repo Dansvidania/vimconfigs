@@ -83,7 +83,7 @@ augroup END
 
 " ----- w0rp/ale -----
 
-let g:ale_linters.haskell = ['stack-ghc-mod', 'hlint']
+" let g:ale_linters.haskell = ['stack-ghc-mod', 'hlint']
 
 " ----- parsonsmatt/intero-neovim -----
 
