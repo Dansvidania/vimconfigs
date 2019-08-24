@@ -22,3 +22,15 @@
 [submodule "bundle/vim2hs"]
 	path = bundle/vim2hs
 	url = https://github.com/dag/vim2hs
+[submodule "ghcid"]
+	path = ghcid
+	url = https://github.com/ndmitchell/ghcid
+[submodule "gruvbox-material"]
+	path = gruvbox-material
+	url = https://github.com/Dansvidania/gruvbox-material
+[submodule "bundle/gruvbox-material"]
+	path = bundle/gruvbox-material
+	url = https://github.com/Dansvidania/gruvbox-material
+[submodule "bundle/ghcid"]
+	path = bundle/ghcid
+	url = https://github.com/ndmitchell/ghcid
