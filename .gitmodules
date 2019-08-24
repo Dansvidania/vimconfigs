@@ -1,33 +1,27 @@
 [submodule "bundle/elm-vim"]
 	path = bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim
-[submodule "bundle/haskell-vim"]
-	path = bundle/haskell-vim
-	url = https://github.com/neovimhaskell/haskell-vim.git
 [submodule "bundle/vim-autoformat"]
 	path = bundle/vim-autoformat
 	url = https://github.com/chiel92/vim-autoformat
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
 	url = https://github.com/guns/vim-clojure-static
-[submodule "bundle/vim-haskell-indent"]
-	path = bundle/vim-haskell-indent
-	url = https://github.com/itchyny/vim-haskell-indent
 [submodule "bundle/vim-stylish-haskell"]
 	path = bundle/vim-stylish-haskell
 	url = https://github.com/nbouscal/vim-stylish-haskell
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = https://github.com/micha/vim-colors-solarized
-[submodule "bundle/vim2hs"]
-	path = bundle/vim2hs
-	url = https://github.com/dag/vim2hs
 [submodule "bundle/gruvbox-material"]
 	path = bundle/gruvbox-material
 	url = https://github.com/Dansvidania/gruvbox-material
 [submodule "bundle/ghcid"]
 	path = bundle/ghcid
 	url = https://github.com/ndmitchell/ghcid
-[submodule "bundle/vim-gutter"]
-	path = bundle/vim-gutter
+[submodule "bundle/git-gutter"]
+	path = bundle/git-gutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "bundle/intero"]
+	path = bundle/intero
+	url = https://github.com/parsonsmatt/intero-neovim
