@@ -31,3 +31,12 @@
 [submodule "bundle/vim-hindent"]
 	path = bundle/vim-hindent
 	url = https://github.com/alx741/vim-hindent
+[submodule "bundle/vim-clojure-highlight"]
+	path = bundle/vim-clojure-highlight
+	url = https://github.com/guns/vim-clojure-highlight
+[submodule "bundle/fireplace-vim"]
+	path = bundle/fireplace-vim
+	url = https://github.com/tpope/vim-fireplace
+[submodule "bundle/vim-cljfmt"]
+	path = bundle/vim-cljfmt
+	url = https://github.com/venantius/vim-cljfmt
