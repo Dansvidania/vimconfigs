@@ -1,6 +1,9 @@
 " tells vim not to be compatible with vi
 set nocompatible
 
+" remap leader key to spacebar
+let mapleader="\<Space>"
+
 " recursively search into subfolders
 set path+=**
 
