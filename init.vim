@@ -116,3 +116,7 @@ augroup interoMaps
   au FileType haskell nnoremap <silent> <leader>iu :InteroUses<CR>
   au FileType haskell nnoremap <leader>ist :InteroSetTargets<SPACE>
 augroup END
+
+" ------RUST------
+
+let g:rustfmt_autosave = 1

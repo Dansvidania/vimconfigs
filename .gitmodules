@@ -40,3 +40,6 @@
 [submodule "bundle/vim-cljfmt"]
 	path = bundle/vim-cljfmt
 	url = https://github.com/venantius/vim-cljfmt
+[submodule "bundle/cider-nrepl"]
+	path = bundle/cider-nrepl
+	url = https://github.com/clojure-emacs/cider-nrepl
