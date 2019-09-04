@@ -43,3 +43,9 @@
 [submodule "bundle/cider-nrepl"]
 	path = bundle/cider-nrepl
 	url = https://github.com/clojure-emacs/cider-nrepl
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "bundle/rust.vim"]
+	path = bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim
