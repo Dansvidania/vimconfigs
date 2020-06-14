@@ -1,3 +1,49 @@
+call plug#begin('~/.config/nvim/pluggd')
+
+" Generic autocompletion and Language Server Client
+Plug 'scrooloose/syntastic'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" FileTree
+Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" Window navigation
+Plug 'christoomey/vim-tmux-navigator'
+
+" Colorscheme
+Plug 'sainnhe/gruvbox-material'
+
+" Git
+Plug 'airblade/vim-gitgutter'
+
+" Haskell
+Plug 'neovimhaskell/haskell-vim'
+Plug 'alx741/vim-stylishask'
+
+" Rust
+Plug 'rust-lang/rust.vim'
+
+call plug#end()
+
+" coc config
+let g:coc_global_extensions = 
+      \ [ 'coc-snippets'
+      \ , 'coc-actions'
+      \ , 'coc-pairs'
+      \ , 'coc-json'
+      \ , 'coc-git'
+      \ , 'coc-rls'
+      \ , 'coc-sql'
+      \ , 'coc-yaml'
+      \ , 'coc-highlight'
+      \ ]
+
+" nerdtree
+nmap <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeIgnore = ['^node_modules$']
+
 " tells vim not to be compatible with vi
 set nocompatible
 
@@ -10,9 +56,6 @@ set path+=**
 " display all matching files when tab completing
 set wildmenu
 set wildmode=longest:full,full
-
-" enable pasting
-set paste
 
 " hide buffers instead of closing them
 set hidden
@@ -39,7 +82,6 @@ set shiftwidth=2
 set softtabstop=2
 set laststatus=2
 
-execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
@@ -91,31 +133,31 @@ augroup END
 " ----- parsonsmatt/intero-neovim -----
 
 " Prefer starting Intero manually (faster startup times)
-let g:intero_start_immediately = 0
-" Use ALE (works even when not using Intero)
-let g:intero_use_neomake = 0
-
-augroup interoMaps
-  au!
-
-  au FileType haskell nnoremap <silent> <leader>io :InteroOpen<CR>
-  au FileType haskell nnoremap <silent> <leader>iov :InteroOpen<CR><C-W>H
-  au FileType haskell nnoremap <silent> <leader>ih :InteroHide<CR>
-  au FileType haskell nnoremap <silent> <leader>is :InteroStart<CR>
-  au FileType haskell nnoremap <silent> <leader>ik :InteroKill<CR>
-
-  au FileType haskell nnoremap <silent> <leader>wr :w \| :InteroReload<CR>
-  au FileType haskell nnoremap <silent> <leader>il :InteroLoadCurrentModule<CR>
-  au FileType haskell nnoremap <silent> <leader>if :InteroLoadCurrentFile<CR>
-
-  au FileType haskell map <leader>t <Plug>InteroGenericType
-  au FileType haskell map <leader>T <Plug>InteroType
-  au FileType haskell nnoremap <silent> <leader>it :InteroTypeInsert<CR>
-
-  au FileType haskell nnoremap <silent> <leader>jd :InteroGoToDef<CR>
-  au FileType haskell nnoremap <silent> <leader>iu :InteroUses<CR>
-  au FileType haskell nnoremap <leader>ist :InteroSetTargets<SPACE>
-augroup END
+"let g:intero_start_immediately = 0
+"" Use ALE (works even when not using Intero)
+"let g:intero_use_neomake = 0
+"
+"augroup interoMaps
+"  au!
+"
+"  au FileType haskell nnoremap <silent> <leader>io :InteroOpen<CR>
+"  au FileType haskell nnoremap <silent> <leader>iov :InteroOpen<CR><C-W>H
+"  au FileType haskell nnoremap <silent> <leader>ih :InteroHide<CR>
+"  au FileType haskell nnoremap <silent> <leader>is :InteroStart<CR>
+"  au FileType haskell nnoremap <silent> <leader>ik :InteroKill<CR>
+"
+"  au FileType haskell nnoremap <silent> <leader>wr :w \| :InteroReload<CR>
+"  au FileType haskell nnoremap <silent> <leader>il :InteroLoadCurrentModule<CR>
+"  au FileType haskell nnoremap <silent> <leader>if :InteroLoadCurrentFile<CR>
+"
+"  au FileType haskell map <leader>t <Plug>InteroGenericType
+"  au FileType haskell map <leader>T <Plug>InteroType
+"  au FileType haskell nnoremap <silent> <leader>it :InteroTypeInsert<CR>
+"
+"  au FileType haskell nnoremap <silent> <leader>jd :InteroGoToDef<CR>
+"  au FileType haskell nnoremap <silent> <leader>iu :InteroUses<CR>
+"  au FileType haskell nnoremap <leader>ist :InteroSetTargets<SPACE>
+"augroup END
 
 " ------RUST------
 
