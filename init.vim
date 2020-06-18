@@ -27,6 +27,13 @@ Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
+" open init.vim
+command Vimrc :e ~/.config/nvim/init.vim
+
+" clipboard interactions
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+
 " coc config
 let g:coc_global_extensions = 
       \ [ 'coc-snippets'
