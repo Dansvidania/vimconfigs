@@ -54,7 +54,9 @@ let g:NERDTreeIgnore = ['^node_modules$']
 " tells vim not to be compatible with vi
 set nocompatible
 
-" remap leader key to spacebar
+" clear mapping for <spacebar>
+nnoremap <SPACE> <Nop>
+" remap leader key to <spacebar>
 let mapleader="\<Space>"
 
 " recursively search into subfolders
@@ -133,42 +135,9 @@ augroup haskellStylish
   au FileType haskell nnoremap <leader>hf :call HaskellFormat('both')<CR>
 augroup END
 
-" ----- w0rp/ale -----
-
-" let g:ale_linters.haskell = ['stack-ghc-mod', 'hlint']
-
-" ----- parsonsmatt/intero-neovim -----
-
-" Prefer starting Intero manually (faster startup times)
-"let g:intero_start_immediately = 0
-"" Use ALE (works even when not using Intero)
-"let g:intero_use_neomake = 0
-"
-"augroup interoMaps
-"  au!
-"
-"  au FileType haskell nnoremap <silent> <leader>io :InteroOpen<CR>
-"  au FileType haskell nnoremap <silent> <leader>iov :InteroOpen<CR><C-W>H
-"  au FileType haskell nnoremap <silent> <leader>ih :InteroHide<CR>
-"  au FileType haskell nnoremap <silent> <leader>is :InteroStart<CR>
-"  au FileType haskell nnoremap <silent> <leader>ik :InteroKill<CR>
-"
-"  au FileType haskell nnoremap <silent> <leader>wr :w \| :InteroReload<CR>
-"  au FileType haskell nnoremap <silent> <leader>il :InteroLoadCurrentModule<CR>
-"  au FileType haskell nnoremap <silent> <leader>if :InteroLoadCurrentFile<CR>
-"
-"  au FileType haskell map <leader>t <Plug>InteroGenericType
-"  au FileType haskell map <leader>T <Plug>InteroType
-"  au FileType haskell nnoremap <silent> <leader>it :InteroTypeInsert<CR>
-"
-"  au FileType haskell nnoremap <silent> <leader>jd :InteroGoToDef<CR>
-"  au FileType haskell nnoremap <silent> <leader>iu :InteroUses<CR>
-"  au FileType haskell nnoremap <leader>ist :InteroSetTargets<SPACE>
-"augroup END
-
 " ------RUST------
 
-let g:rustfmt_autosave = 1
+let g:rustfmt_autosave = 0
 
 " ====== COC ======
 " Some servers have issues with backup files, see #649.
@@ -241,9 +210,6 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
-
-" Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
